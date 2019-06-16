@@ -1,0 +1,126 @@
+aside {
+  grid-area: s;
+  border-right: 1px solid #eaeaea;
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+
+  &.shrink {
+    width: 70px;
+
+    .brand {
+      padding: 15px 20px;
+    }
+
+    li {
+      div {
+        width: 70px;
+        padding: 15px 0!important;
+        display: grid!important;
+        grid-template-columns: 1fr!important;
+        place-items: center!important;
+
+        img {
+          margin-right: 0!important;
+        }
+
+        .nolist {
+          display: none;
+        }
+      }
+    }
+  }
+
+    .brand {
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 200;
+      }
+    }
+
+    .links {
+      margin-top: 20px;
+      cursor: pointer;
+      list-style: none;
+
+      .nolist {
+        display: none;
+      }
+
+      .link {
+        &:hover {
+          background: lighten(#ccc, 5%);
+        }
+
+        &.active {
+          .nolist {
+            display: block;
+
+            > li {
+              padding: 15px 80px;
+              font-size: 14px;
+              display: flex;
+
+              p {
+                width: 100%;
+              }
+            }
+
+            li:hover {
+              background: lighten(#ccc, 5%)
+            }
+          }
+
+
+          &:hover {
+            background: #fff;
+          }
+
+          div {
+            background: rgb(128,123,227);
+            color: #fff;
+
+            img {
+              filter: invert(1);
+            }
+          }
+        }
+      }
+
+      > li {
+
+
+        div {
+          padding: 15px 20px 15px 40px;
+          font-size: 14px;
+          display: grid;
+          grid-template-columns: 20px 1fr 20px;
+          grid-gap: 20px;
+          align-items: center;
+
+          img {
+            height: 15px;
+            margin-right: 20px;
+          }
+
+          & a {
+            color: #fff;
+            text-decoration: none;
+          font-weight: 100;
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+}
