@@ -49,7 +49,7 @@ aside {
     }
 
     .links {
-      margin-top: 20px;
+      margin-top: 15px;
       cursor: pointer;
       list-style: none;
 
@@ -59,7 +59,7 @@ aside {
 
       .link {
         &:hover {
-          background: lighten(#ccc, 5%);
+          background: lighten(#ccc, 10%);
         }
 
         &.active {
@@ -98,8 +98,6 @@ aside {
       }
 
       > li {
-
-
         div {
           padding: 15px 20px 15px 40px;
           font-size: 14px;
@@ -116,8 +114,8 @@ aside {
           & a {
             color: #fff;
             text-decoration: none;
-          font-weight: 100;
-          font-size: 14px;
+            font-weight: 100;
+            font-size: 14px;
         }
       }
 

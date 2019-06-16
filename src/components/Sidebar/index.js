@@ -39,7 +39,7 @@ export default function Sidebar({ expandSidebar }) {
         {expandSidebar && <h1>TheLions</h1>}
       </div>
       <ul className="links">
-        <li className="link">
+        <li className="link active">
           <div>
             <img src={home} alt="" />
             {expandSidebar && <p>Home</p>}
