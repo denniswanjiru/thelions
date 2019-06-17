@@ -1,0 +1,49 @@
+.advanced {
+  height: 100vh;
+  // z-index: 202;
+  background: #fff;
+  width: 300px;
+  position: absolute;
+  border-left: solid 1px #ccc;
+  right: 0;
+  transition: width 1s;
+  opacity: 1;
+  padding: 20px 20px;
+  position: fixed;
+  z-index: 1000;
+
+  .title {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 20px;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .close {
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+      background: transparent;
+      border: solid 1px #000;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+
+      img {
+        height: 20px;
+      }
+    }
+  }
+
+   &.hidden {
+    width: 0;
+    opacity: 1;
+    visibility: hidden;
+    transition: all .5s ease-out;
+  }
+}

@@ -2,19 +2,25 @@ import React, { useState, useEffect } from 'react';
 import Nav from './components/Nav';
 import Content from './components/Content';
 import Sidebar from './components/Sidebar';
+import AdvancedSidebar from './components/AdvancedSidebar';
 
 const App = () => {
   const [expandSidebar, setExpandSidebar] = useState(true);
+  const [showAdvanced, setShowAdvanced] = useState(false);
 
   useEffect(() => {
-    console.log(expandSidebar);
-  }, [expandSidebar])
+    console.log('vshbfdv>>>>',showAdvanced);
+  }, [showAdvanced])
 
   return (
     <div className={`${!expandSidebar ? 'expand' : ''} page-wrapper`}>
-      <Nav handleExpandSidebar={() => setExpandSidebar(!expandSidebar)} />
+      <Nav
+        handleExpandSidebar={() => setExpandSidebar(!expandSidebar)}
+        handleClose={() => setShowAdvanced(!showAdvanced)}
+      />
       <Content />
       <Sidebar expandSidebar={expandSidebar} />
+      <AdvancedSidebar show={showAdvanced} handleClose={() => setShowAdvanced(!showAdvanced)} />
     </div>
   );
 }

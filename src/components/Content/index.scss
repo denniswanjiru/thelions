@@ -7,14 +7,18 @@ main {
 .card {
   background: #fff;
   border-bottom: solid 1px #ccc;
-  padding: 18px;
+  padding: 12px 20px;
   margin-bottom: 20px;
   position: sticky;
   top: 65px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   .right {
+    display: flex;
+    align-items: center;
+
     *:not(:last-child) {
       margin-right: 10px;
     }
@@ -22,6 +26,7 @@ main {
 
   img {
     height: 15px;
+    cursor: pointer;
   }
 }
 

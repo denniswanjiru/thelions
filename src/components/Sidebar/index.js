@@ -5,7 +5,6 @@ import activity from '../../assets/icons/activity.svg';
 import anchor from '../../assets/icons/anchor.svg';
 import users from '../../assets/icons/users.svg';
 import mix from '../../assets/icons/mix.svg';
-import playlist from '../../assets/icons/play-circle.svg';
 import cast from '../../assets/icons/cast.svg';
 import briefcase from '../../assets/icons/briefcase.svg';
 import chevronRight from '../../assets/icons/chevron-right.svg';
@@ -17,8 +16,6 @@ export default function Sidebar({ expandSidebar }) {
   }, [])
 
   const isActive = () => {
-    const linksContainer = document.getElementsByClassName("links");
-
     // Get all buttons with class="btn" inside the container
     const links = document.getElementsByClassName("link");
 
@@ -26,12 +23,12 @@ export default function Sidebar({ expandSidebar }) {
     for (let i = 0; i < links.length; i++) {
       links[i].addEventListener("click", () => {
         const current = document.getElementsByClassName("active");
-        console.log(current.length > 0, 'CURRENT')
         if(current.length > 0) current[0].className = current[0].className.replace(" active", "");
         links[i].className += " active";
       });
     }
   }
+
   return (
     <aside className={expandSidebar ? '' : 'shrink' }>
       <div className="brand">
