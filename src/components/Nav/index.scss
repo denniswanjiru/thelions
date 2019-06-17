@@ -4,9 +4,10 @@ header {
   border-bottom: 1px solid #eaeaea;
   align-items: center;
   padding: 0 20px;
-  position: sticky;
-  top: 0;
+  position: sticky!important;
+  top: 0!important;
   background: #fff;
+  z-index: 3;
 
   nav {
     display: grid;

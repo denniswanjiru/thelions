@@ -2,6 +2,7 @@ main {
   grid-area: content;
   padding: 0 0 20px 0;
   background: #F1F3F7;
+  overflow-y: scroll;
 }
 
 .card {
@@ -9,8 +10,8 @@ main {
   border-bottom: solid 1px #ccc;
   padding: 12px 20px;
   margin-bottom: 20px;
-  position: sticky;
-  top: 65px;
+  // position: sticky;
+  // top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,7 +40,8 @@ main {
 
   &.heading {
     position: sticky;
-    top: 121px;
+    // top: 56px;
+    top: 0;
     background: #fff;
 
     &:hover {
@@ -71,4 +73,8 @@ main {
 
 .mid {
   width: 200px!important;
+}
+
+.min-mid {
+  width: 100px;
 }
