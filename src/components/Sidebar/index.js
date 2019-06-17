@@ -53,9 +53,77 @@ export default function Sidebar({ expandSidebar }) {
           {expandSidebar && <ul className="nolist">
             <li>
               <p>In Pipeline</p>
+              <ul className="sub-menu">
+                <li>
+                  <strong>in Pipeline 🚀</strong>
+                  <p>Your Lions with active Introductions</p>
+                </li>
+                <li>
+                  <strong>to PITCH ⚾</strong>
+                  <p>Your Lions Profiled as “Active” or “Reactive”</p>
+                </li>
+                <li>
+                  <strong>to Profile 💪</strong>
+                  <p>Your Lions Hunting but NOT Profiled</p>
+                </li>
+                <li>
+                  <strong>to Hunt ⛏</strong>
+                  <p>Your Lion Prospects to Hunt ASAFP</p>
+                </li>
+                <li>
+                  <strong>we Placed 🌈</strong>
+                  <p>Your Lions with Friends to Hunt #Winning</p>
+                </li>
+                <li>
+                  <strong>to Poach 🐘👀</strong>
+                  <p>All owned Lions with 5+ months ZERO Activity</p>
+                </li>
+                <li>
+                  <strong>at Pasture 🐑</strong>
+                  <p>All unowned Lions ready for you to CLAIM</p>
+                </li>
+                <li>
+                  <strong>to Patrol 🚔</strong>
+                  <p>Suspect Lions LESS likely worth Claiming</p>
+                </li>
+              </ul>
             </li>
             <li>
               <p>With Role</p>
+              <ul className="sub-menu">
+                <li>
+                  <strong>Sales Development 🍭</strong>
+                  <p>Junior Lions who Hunt but DON’T Close</p>
+                </li>
+                <li>
+                  <strong>Inside AE 📟</strong>
+                  <p>Junior Lions who Close over the phone</p>
+                </li>
+                <li>
+                  <strong>Hybrid AE 🏆</strong>
+                  <p>Midlevel Lions who Close some deals in Field</p>
+                </li>
+                <li>
+                  <strong>Sales Engineers 🐬</strong>
+                  <p>Technical Lions who help Field AEs on BIG deals</p>
+                </li>
+                <li>
+                  <strong>Operations ⛑</strong>
+                  <p>Smart Lions who build management systems</p>
+                </li>
+                <li>
+                  <strong>to Poach 🐘👀</strong>
+                  <p>All owned Lions with 5+ months ZERO Activity</p>
+                </li>
+                <li>
+                  <strong>Success 💨💣</strong>
+                  <p>“Farmer” Lions who support existing customers</p>
+                </li>
+                <li>
+                  <strong>Partnerships</strong>
+                  <p>Strategic Lions who negotiate business Partnerships</p>
+                </li>
+              </ul>
             </li>
             <li>
               <p>Selling Into</p>

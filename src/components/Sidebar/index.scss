@@ -70,6 +70,7 @@ aside {
               padding: 15px 80px;
               font-size: 14px;
               display: flex;
+              position: relative;
 
               p {
                 width: 100%;
@@ -77,7 +78,12 @@ aside {
             }
 
             li:hover {
-              background: lighten(#ccc, 5%)
+              background: lighten(#ccc, 5%);
+
+              > .sub-menu {
+                display: block;
+                transition: all 1s ease;
+              }
             }
           }
 
@@ -98,6 +104,14 @@ aside {
       }
 
       > li {
+        position: relative;
+
+        &:hover {
+          > .sub-menu {
+            display: block;
+          }
+        }
+
         div {
           padding: 15px 20px 15px 40px;
           font-size: 14px;
@@ -119,6 +133,42 @@ aside {
         }
       }
 
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  min-width: 100%;
+  background: #fff;
+  left: 250px;
+  top: 0;
+  list-style: none;
+  display: none;
+  border: solid 1px #ccc;
+
+  > li {
+    padding: 10px 20px;
+    width: 100%;
+    white-space: nowrap;
+
+    > strong {
+      font-size: 13px;
+      font-weight: normal;
+    }
+
+    > p {
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 5px;;
+    }
+
+    &:hover {
+      background: whitesmoke!important;
+    }
+
+    &:not(:last-child) {
+      border-bottom: solid 1px #ccc;
     }
   }
 }
