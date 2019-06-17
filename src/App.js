@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Nav from './components/Nav';
 import Content from './components/Content';
 import Sidebar from './components/Sidebar';
@@ -7,10 +7,6 @@ import AdvancedSidebar from './components/AdvancedSidebar';
 const App = () => {
   const [expandSidebar, setExpandSidebar] = useState(true);
   const [showAdvanced, setShowAdvanced] = useState(false);
-
-  useEffect(() => {
-    console.log('vshbfdv>>>>',showAdvanced);
-  }, [showAdvanced])
 
   return (
     <div className={`${!expandSidebar ? 'expand' : ''} page-wrapper`}>

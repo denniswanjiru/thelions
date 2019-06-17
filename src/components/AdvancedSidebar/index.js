@@ -4,7 +4,6 @@ import x from '../../assets/icons/x.svg';
 import './index.scss'
 
 export default function AdvancedSidebar({ show, handleClose }) {
-  console.log(show, 'vsdsd')
   return (
     <div className={show ? 'advanced' : 'advanced hidden'}>
       <div className="title">
